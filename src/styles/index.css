@@ -1,0 +1,202 @@
+.main-contents {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  background-image: linear-gradient(
+    to left,
+    var(--backgroundGray),
+    rgb(39, 39, 53) 50%
+  );
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  max-height: 90vh;
+  background: transparent;
+  text-align: center;
+  gap: 1.2rem;
+  margin-right: 7.2rem;
+}
+
+.bio-primary {
+  color: var(--textWhite);
+  font-size: 8rem;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  background: inherit;
+}
+
+.bio-secondary {
+  color: #999;
+  font-size: 6.4rem;
+  line-height: 1.1;
+  background: inherit;
+}
+
+.bio-tertiary {
+  color: #999;
+  font-size: 2.4rem;
+  background: inherit;
+  margin-top: 1.2rem;
+}
+
+.portrait-img {
+  background-image: linear-gradient(
+      to left,
+      rgb(39, 39, 53) 18% 0%,
+      rgba(30, 30, 44, 0.2)
+    ),
+    url("../imgs/RyanBecotteSquare.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 50vw;
+  justify-self: start;
+}
+
+/* Below 1180px */
+@media (max-width: 74em) {
+  .main-contents {
+    background-image: linear-gradient(
+      to left,
+      var(--backgroundGray),
+      rgb(39, 39, 53) 40%
+    );
+  }
+
+  .bio {
+    width: 40vw;
+  }
+
+  .bio-primary {
+    font-size: 6.4rem;
+  }
+
+  .bio-secondary {
+    font-size: 3.2rem;
+    line-height: 1.5;
+  }
+
+  .bio-tertiary {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+
+  .portrait-img {
+    width: 60vw;
+  }
+}
+
+/* Below 1000px */
+@media (max-width: 63em) {
+  .main-contents {
+    background-image: linear-gradient(
+      to left,
+      var(--backgroundGray),
+      rgb(39, 39, 53) 30%
+    );
+  }
+
+  .bio {
+    width: 30vw;
+  }
+
+  .bio-secondary {
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+
+  .bio-tertiary {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+
+  .portrait-img {
+    width: 70vw;
+  }
+}
+
+/* Below 822px */
+@media (max-width: 52em) {
+  .main-contents {
+    background-image: linear-gradient(
+      to left,
+      var(--backgroundGray),
+      rgb(39, 39, 53) 40%
+    );
+  }
+
+  .bio {
+    width: 40vw;
+    margin-right: 0;
+  }
+
+  .portrait-img {
+    background-image: linear-gradient(
+        to left,
+        rgb(39, 39, 53) 5% 0%,
+        rgba(30, 30, 44, 0.2)
+      ),
+      url("../imgs/RyanBecotteSquare.jpg");
+    width: 60vw;
+  }
+}
+
+/* Below 780px */
+@media (max-width: 49em) {
+  .main-contents {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(
+      to top,
+      var(--backgroundGray),
+      rgb(39, 39, 53) 20%
+    );
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .bio {
+    max-height: 50rem;
+    width: 80%;
+    gap: 0.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .bio-primary {
+    font-size: 4.8rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .bio-secondary {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .bio-tertiary {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+
+  br {
+    display: block;
+    content: "";
+    margin-top: 0;
+  }
+
+  .portrait-img {
+    background-image: linear-gradient(
+        to top,
+        rgb(39, 39, 53) 15% 0%,
+        rgba(30, 30, 44, 0.2)
+      ),
+      url("../imgs/RyanBecotteSquare.jpg");
+    width: 100vw;
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="../styles/general.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../styles/contact.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Ryan Becotte - Contact</title>
+    <link rel="icon" href="../imgs/favicon.ico" />
+  </head>
+  <body>
+    <script src="../js/script.js" defer></script>
+    <h1 class="heading-primary">Contact Me</h1>
+    <div class="main-contents">
+      <div class="form-container">
+        <form method="POST" enctype="text/plain">
+          <label for="fullname">Full Name:</label
+          ><br />
+          <input
+            name="fullname"
+            type="text"
+            id="fullname"
+            placeholder="John Doe"
+            required
+          /><br />
+          <label for="email">Email:</label><br />
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="hi@hello.com"
+            required
+          /><br />
+          <label for="message">Message:</label
+          ><br />
+          <textarea
+            name="message"
+            id="message"
+            rows="4"
+            placeholder="Hello, world!"
+            required
+          ></textarea
+          ><br />
+          <input
+            id="submit"
+            type="submit"
+            value="Submit"
+          />
+        </form>
+      </div>
+      <div class="info-container">
+        <p class="info-par">
+          Feel free to contact me on any platform
+          or fill out the form!
+        </p>
+        <div class="contacts-grid">
+          <ion-icon
+            class="contact-icon"
+            name="call-outline"
+          ></ion-icon>
+          <p class="contact-phone">
+            +1 (906) 280-7011
+          </p>
+
+          <ion-icon
+            class="contact-icon"
+            name="logo-linkedin"
+          ></ion-icon>
+          <a
+            class="contact-link"
+            target="_blank"
+            href="https://www.linkedin.com/in/ryanbecotte/"
+            >https://www.linkedin.com/in/ryanbecotte/</a
+          >
+
+          <ion-icon
+            class="contact-icon"
+            name="logo-github"
+          ></ion-icon>
+          <a
+            class="contact-link"
+            target="_blank"
+            href="https://github.com/rrbecott"
+            >https://github.com/rrbecott</a
+          >
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
