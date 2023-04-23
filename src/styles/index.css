@@ -198,5 +198,6 @@
       ),
       url("../imgs/RyanBecotteSquare.jpg");
     width: 100vw;
+    background-position: center;
   }
 }
