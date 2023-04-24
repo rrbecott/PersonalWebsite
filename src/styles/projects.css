@@ -119,5 +119,12 @@
 @media (max-width: 62em) {
   .project-main-container {
     grid-template-columns: 1fr;
+    column-gap: 0;
+    margin: 6.4rem;
+  }
+
+  .project-link {
+    width: 80%;
+    justify-self: center;
   }
 }
