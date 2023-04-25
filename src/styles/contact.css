@@ -9,6 +9,7 @@
 .form-container {
   width: 100%;
   margin: 0;
+  margin-left: 9.6rem;
 }
 
 form {
@@ -115,6 +116,7 @@ input,
   }
 
   .form-container {
+    margin-left: 0;
     grid-row: 2;
   }
 
